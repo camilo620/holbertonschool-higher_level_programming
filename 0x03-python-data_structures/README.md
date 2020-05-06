@@ -1,0 +1,1 @@
+This directoryu contains answer for the project data structures at Holberton School
