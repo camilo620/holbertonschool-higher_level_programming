@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    val = 0
+    v = 0
     if roman_string and type(roman_string) is str and roman_string.isalpha():
         r = roman_string.upper()
         for i in range(len(r)):
