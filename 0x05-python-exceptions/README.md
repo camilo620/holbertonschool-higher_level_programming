@@ -1,0 +1,1 @@
+This repository contains answers for project exceptions at holberton school
