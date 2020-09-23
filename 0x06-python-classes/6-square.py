@@ -54,7 +54,7 @@ class Square:
         r = range(self.__size)
 
         p = range(self.__position[0])
-        
+
         if self.__size == 0:
             print()
         else:
