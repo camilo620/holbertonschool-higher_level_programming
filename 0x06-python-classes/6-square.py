@@ -51,27 +51,28 @@ class Square:
     def my_print(self):
         """Prints a square
         """
-        l = range(self.__size)
+        r = range(self.__size)
 
-        o = range(self.__position[0])
+        p = range(self.__position[0])
         
         if self.__size == 0:
             print()
         else:
             if self.position == (0, 0):
-                print("\n".join(["".join(["#" for i in o]) for y in o]))
+                print("\n".join(["".join(["#" for i in r]) for y in r]))
             else:
                 for _ in range(self.__position[1]):
                     print()
-                for _ in o:
-                    print("".join([" " for s in l]), end="")
-                    print("".join(["#" for i in l]))
+                for _ in r:
+                    print("".join([" " for s in p]), end="")
+
+                    print("".join(["#" for i in r]))
 
     @property
     def position(self):
         """Getter of position
         Returns:
-        position
+            position
         """
         return self.__position
 
@@ -87,7 +88,5 @@ class Square:
             type(value[0]) is not int or value[0] < 0 or\
                 type(value[1]) is not int or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-
         else:
-
             self.__position = value
