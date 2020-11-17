@@ -1,0 +1,1 @@
+This repository contains answer for projects at holberton school.
